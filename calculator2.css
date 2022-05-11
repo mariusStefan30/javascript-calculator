@@ -1,0 +1,158 @@
+body {
+  width: 500px;
+  margin: 10% auto;
+  background-color: rgb(213, 231, 230);
+  font-family: sans-serif;
+  letter-spacing: normal;
+  font-size: 1.8rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.loader {
+  margin: 2px 160px;
+  border: 3px solid #f3f3f3; /* Light grey */
+  border-top: 3px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  width: 10px;
+  height: 5px;
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 18px;
+  text-emphasis-color: auto;
+  color: rgba(73, 75, 2, 0.513);
+}
+
+.calculator2 {
+  background-color: #878d9c;
+  margin-top: 60px;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+[contentEditable="true"]:empty:not(:focus):before {
+  content: attr(data-text);
+}
+
+.input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 60px;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2, 5rem;
+  overflow-x: auto;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.butoane {
+}
+
+.operatori {
+}
+
+.operatori div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.operatori div:hover {
+  background-color: #ddd;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.operatori div:active {
+  font-weight: bold;
+}
+
+.panoulStang {
+  display: inline-block;
+}
+
+.numere div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.numere div:hover {
+  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.numere div:active {
+  font-weight: bold;
+}
+
+div.egal {
+  display: inline-block;
+  border: 1px solid #5a83c53f;
+  border-radius: 1px;
+  width: 17%;
+  text-align: center;
+  padding: 127px 10px;
+  margin: 10px 6px 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: #4261928f;
+  transition: all 0.2s ease-in-out;
+}
+
+div.egal:hover {
+  background-color: #4f7fccb6;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #2b68cabc;
+}
+
+div.egal:active {
+  font-weight: bold;
+}
